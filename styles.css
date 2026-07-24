@@ -306,7 +306,15 @@ section h2 { font-size: clamp(26px, 4vw, 40px); }
   font-size: var(--be-size);
   line-height: 1.15;
   color: var(--brass);
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+}
+
+.hero-subtitle {
+  font-family: var(--font-display);
+  letter-spacing: var(--display-track);
+  font-size: clamp(13px, 1.6vw, 17px);
+  color: var(--dim);
+  margin-bottom: 28px;
 }
 
 .hero-headline {
@@ -356,6 +364,50 @@ section h2 { font-size: clamp(26px, 4vw, 40px); }
 /* ---------- About ---------- */
 
 .about { padding: 110px 0; background: var(--bg2); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); transition: background-color .45s ease, border-color .45s ease; }
+
+/* ---------- Our Story ---------- */
+
+.story { padding: 110px 0; }
+
+.story-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  max-width: 780px;
+  margin: 50px auto 0;
+  padding: 0 24px;
+  text-align: center;
+}
+@media (max-width: 700px) { .story-grid { grid-template-columns: 1fr; gap: 40px; } }
+
+.story-frame { margin: 0; }
+
+.story-placeholder {
+  aspect-ratio: 4 / 3;
+  border: 1.5px dashed var(--line);
+  border-radius: 16px;
+  background: var(--card);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: background-color .45s ease, border-color .45s ease;
+}
+.story-placeholder-icon { font-size: 30px; opacity: .55; }
+.story-placeholder-label {
+  font-family: var(--font-body);
+  font-size: 12.5px;
+  letter-spacing: .04em;
+  color: var(--dim);
+}
+
+.story-frame figcaption {
+  margin-top: 16px;
+  font-size: 14px;
+  color: var(--dim);
+  line-height: 1.6;
+}
 
 /* ---------- Worlds ---------- */
 
@@ -480,6 +532,48 @@ section h2 { font-size: clamp(26px, 4vw, 40px); }
 }
 .step h3 { font-size: 19px; margin-bottom: 10px; }
 .step p { color: var(--dim); font-size: 14.5px; }
+
+/* ---------- Scan Here ---------- */
+
+.scan {
+  padding: 110px 0;
+  background: var(--bg2);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  transition: background-color .45s ease, border-color .45s ease;
+}
+
+.scan-card {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin-top: 40px;
+  padding: 28px 34px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: border-color .3s ease, transform .15s ease, background-color .45s ease;
+}
+.scan-card:hover { border-color: var(--brass); transform: translateY(-2px); }
+
+.scan-qr {
+  display: block;
+  width: 200px;
+  height: 200px;
+  border-radius: 12px;
+  background: #fff;
+  padding: 10px;
+}
+
+.scan-tap {
+  font-family: var(--font-body);
+  font-size: 13px;
+  letter-spacing: .02em;
+  color: var(--brass-dim);
+}
 
 /* ---------- Join ---------- */
 
