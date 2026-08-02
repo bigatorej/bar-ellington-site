@@ -31,8 +31,8 @@
   var param = new URLSearchParams(window.location.search).get("theme");
   if (param) setTheme(param);
 
-  var SUPABASE_URL = "https://qlumefjeyxfqikpwnair.supabase.co";
-  var SUPABASE_PUBLISHABLE_KEY = "sb_publishable_9Ha8LGE2qTbcdx_1O8E97Q_y6vC03Ak";
+  var SUPABASE_URL = "https://kxdpwqijyfitkwvqlyec.supabase.co";
+  var SUPABASE_PUBLISHABLE_KEY = "sb_publishable_r9XiLykJFi5zJS4dlUfrFw_GccQSBTS";
   var EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
   var supabaseClientPromise = null;
